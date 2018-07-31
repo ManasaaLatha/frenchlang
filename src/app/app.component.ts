@@ -23,7 +23,7 @@ export class MyApp {
     
 
     });
-    this.rootPage = 'about';
+    this.rootPage = 'static1';
    
     this.translate.use(this.selectedLanguage);
    
@@ -31,6 +31,12 @@ export class MyApp {
 
   private openLanguageSelectionPage(){
     this.nav.setRoot("baba_web_pata");
+    this.menu.close();
+  }
+
+
+  private openStatic1Page(){
+    this.nav.setRoot("static1");
     this.menu.close();
   }
 
